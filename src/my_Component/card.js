@@ -1,8 +1,10 @@
 import React from "react";
 
-export default function card() {
+export default function Card() {
     return (
-        <div class="flex flex-wrap items-center justify-center">
+      <div className="container">
+
+      <div class="flex flex-wrap items-center justify-center">
             <div class="flex-shrink-0 mx-2 mb-6 relative overflow-hidden bg-yellow-500 rounded-lg max-w-xs shadow-lg">
                 <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none">
                     <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="#f3c06b">
@@ -85,6 +87,7 @@ export default function card() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

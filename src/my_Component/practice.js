@@ -1,11 +1,11 @@
 import React from "react";
-
 const fruits = [
     {
         "id": 1,
         "name": "Banana",
         "price": 125,
         "href": "www.google.com",
+        
     },
     {
         "id": 2,
@@ -22,7 +22,6 @@ const fruits = [
 
     }
 ]
-
 export default function Practice() {
     return (
         <>
