@@ -16,6 +16,11 @@ export default function Todo(props) {
     let newText = "";
     setText(newText);
   };
+  const handleCopy = () => {
+    var text=document.getElementById("Mybox")
+    text.select()
+    navigator.clipboard.writeText(text.value)
+  };
 
   const [text, setText] = useState("This is text area");
   return (
@@ -28,6 +33,7 @@ export default function Todo(props) {
         cols="50"
         rows="5"
         className="texta"
+        id="Mybox"
       ></textarea>
       <button className="btn" onClick={handleupClick}>
         Uppercase
@@ -37,6 +43,9 @@ export default function Todo(props) {
       </button>
       <button className="btn" onClick={handleDelete}>
         Clear
+      </button>
+      <button className="btn" onClick={handleCopy}>
+        Copy
       </button>
         <div className="container mx-12 my-5">
         <h2 className="m-2 text-xl font-semibold">Your Text Summery</h2>
