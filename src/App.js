@@ -9,7 +9,7 @@ function App() {
   return (
    <>
    <Header/>
-   <Todo title="Todo List"/>
+   <Todo title="Text Editor"/>
    {/* <Main/>
    <Page/> */}
    </>
