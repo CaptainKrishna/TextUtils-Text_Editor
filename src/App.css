@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
+.btn{
+    @apply bg-blue-500 p-2 rounded mx-5 text-white font-semibold hover:bg-blue-600
+}
+.titleHead{
+    @apply px-48 py-5   text-3xl font-semibold text-white bg-blue-600
+}
+.texta{
+    @apply container p-12 text-xl bg-gray-300 border-white
+}
 @tailwind utilities;
