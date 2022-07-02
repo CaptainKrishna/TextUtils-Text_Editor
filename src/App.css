@@ -4,10 +4,10 @@
     @apply mx-12 md:mx-12
 }
 .btn{
-    @apply bg-blue-500 p-2 w-1/6  rounded mt-5 mx-2 text-white font-semibold hover:bg-blue-600
+    @apply bg-blue-500 p-2 md:w-1/6 w-1/4 text-sm md:text-xl rounded m-2 text-white font-semibold hover:bg-blue-600
 }
 .titleHead{
-    @apply px-48 py-5   text-3xl font-semibold text-white bg-blue-600
+    @apply px-48 py-5  text-xl md:text-3xl font-semibold text-white bg-blue-600
 }
 .texta{
     @apply container p-12 text-xl bg-gray-300 border-white
