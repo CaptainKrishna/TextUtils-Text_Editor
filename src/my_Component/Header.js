@@ -2,9 +2,10 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import {Link}from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
+  { name: "Home", href: "/Todo", current: true },
   { name: "Categery", href: "#", current: false },
   { name: "Cart", href: "#", current: false },
   { name: "Help", href: "#", current: false },
@@ -34,18 +35,18 @@ export default function Header() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <a  href="index.html">
+                  <Link  to="index.html">
                     <code className="text-3xl font-black font-mono ml-5 text-white ">
                       &#60;Code/&#62;
                     </code>
-                  </a>
+                  </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -55,7 +56,7 @@ export default function Header() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -93,41 +94,41 @@ export default function Header() {
                     <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
                             Your Profile
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
                             Settings
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
                             Sign out
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                     </Menu.Items>
@@ -143,7 +144,7 @@ export default function Header() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  to={item.href}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
