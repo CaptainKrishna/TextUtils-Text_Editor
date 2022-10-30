@@ -7,12 +7,16 @@
     @apply bg-blue-500 p-2 md:w-1/6 w-1/4 text-sm md:text-xl rounded m-2 text-white font-semibold hover:bg-blue-600
 }
 .titleHead{
-    @apply px-48 py-5  text-xl md:text-3xl font-semibold text-white bg-blue-600
+    @apply px-12 md:px-48 py-5  text-xl md:text-3xl font-semibold text-white bg-blue-600
 }
 .texta{
-    @apply container p-12 text-xl bg-gray-300 border-white
+    @apply container p-12 text-xl align-middle justify-center bg-gray-300 border-white
 }
 .contain{
-    @apply bg-gray-100  my-5 w-3/4 md:mx-48 mx-16 h-48
+    @apply bg-gray-100  my-5 w-3/4 md:mx-48 mx-12 h-48
 }
+.lowerbox-area{
+    @apply mx-16 border p-5 my-5
+}
+
 @tailwind utilities;
